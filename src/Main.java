@@ -7,5 +7,6 @@ public class Main {
         System.out.println(circle.calculateArea());
         System.out.println(circle1.calculateArea());
         System.out.println(circle2.calculateArea());
+
     }
 }

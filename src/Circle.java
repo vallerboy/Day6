@@ -1,8 +1,8 @@
-public class Circle {
+public final class Circle {
 
     private int r;
-    private final float PI = 3.14F;
-    
+    private static  float PI = 3.14F;
+
 
     public Circle(int r) {
         this.r = r;
@@ -20,4 +20,24 @@ public class Circle {
     public void setR(int r) {
         this.r = r;
     }
+
+
+
+    public  class Person{
+        private String name;
+
+        public Person(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+    }
+
 }

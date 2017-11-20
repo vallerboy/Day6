@@ -15,5 +15,14 @@ public class Main {
         System.out.println(guarantee.isValid());
         System.out.println(guarantee2.isValid());
         System.out.println(guarantee3.isValid());
+
+
+        MyWater water = new MyWater();
+        water.addMid(10);
+        water.addBig(5);
+        water.addSmall(15);
+        water.addBig(5);
+
+        water.printWater();
     }
 }
