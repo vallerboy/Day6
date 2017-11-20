@@ -12,7 +12,7 @@ public class Guarantee {
     }
 
     public boolean isValid() {
-        if(validUntil.isAfter(LocalDate.now())){
+        if(validUntil.isBefore(LocalDate.now())){
             product = null;
             validUntil = null;
             return false;
