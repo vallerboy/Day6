@@ -16,4 +16,9 @@ public class Worker extends Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String standardWelcome() {
+        return "HAY!";
+    }
 }

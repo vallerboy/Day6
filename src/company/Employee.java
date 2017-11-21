@@ -7,6 +7,8 @@ public abstract class Employee {
         this.name = name;
     }
 
+    public abstract String standardWelcome();
+
     public String getName() {
         return name;
     }

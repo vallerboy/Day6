@@ -1,6 +1,6 @@
 package company;
 
-public class ProjectManager extends Worker {
+public class ProjectManager extends Worker implements IManagment {
 
     private int percentageHappiness;
 
@@ -13,7 +13,22 @@ public class ProjectManager extends Worker {
         this.percentageHappiness = percentageHappiness;
     }
 
+    @Override
+    public String standardWelcome() {
+        return "Jeszcze nie pracujesz?";
+    }
+
     protected void shout(){
         System.out.println("DO ROBOTY!");
+    }
+
+    @Override
+    public void kickOut() {
+        System.out.println("wyrzucam kogos z pracy");
+    }
+
+    @Override
+    public void cos() {
+
     }
 }
